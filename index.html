@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rivers 工具页面</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .desc {
+      color: #666;
+      margin-bottom: 36px;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: block;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #222;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #666;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rivers 工具页面</h1>
+    <p class="desc">这里整理了一些嵌入式、控制算法和知识可视化页面。</p>
+
+    <div class="grid">
+      <a class="card" href="./pid_simulator_standalone.html">
+        <h2>PID 在线仿真器</h2>
+        <p>通过调节 Kp、Ki、Kd 观察系统响应变化。</p>
+      </a>
+
+      <a class="card" href="./kalman_filter_simulator_standalone.html">
+        <h2>卡尔曼滤波仿真器</h2>
+        <p>通过调节 Q、R、P 等参数理解预测、测量和估计过程。</p>
+      </a>
+
+      <a class="card" href="./rivers_timer_queue_knowledge_notes_v4.html">
+        <h2>Rivers Timer / Queue 知识整理</h2>
+        <p>整理 rivers_timer 和 rivers_queue 的运行流程、接口和设计思路。</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
